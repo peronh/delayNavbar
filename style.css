@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.active {
+    transform: scale(1);
+    transition: all 0.4s ease-in-out;
+}
+body {
+    font-family: 'Staatliches', cursive;
+    background-color: azure;
+    color: #ffffff;
+}
+header {
+    background-color: rgba(144, 17, 60, 0.97);
+    padding: 20px;
+    font-size: 24px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid azure;
+}
+header img {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    transform: scale(0);
+    transition: all 0.4s ease-in-out;
+}
+#menu {
+    width: 100%;
+    max-width: 500px;
+}
+#menu a {
+    background-color: rgba(144,17,60,.8);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    border-bottom: 1px solid azure;
+    width: 400px;
+    margin-left: -500px;
+}
