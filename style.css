@@ -31,6 +31,8 @@ header img {
 }
 #menu {
     width: 100%;
+    position: absolute;
+    overflow: hidden;
 }
 #menu a {
     background-color: rgba(144,17,60,.9);
