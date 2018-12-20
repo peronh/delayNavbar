@@ -2,14 +2,14 @@ $(document).ready(function() {
 
 
     $("header img.open").on("click", function() {
-
+        $('#menu a').css('margin-left', '-789px');
         $(this).removeClass('active');
         $("header img").nextAll().addClass('active');
 
         $.each($("div#menu a"), function(i, el){
             setTimeout(function(){
                 $(el).animate({marginLeft: '0'});
-            },200 + ( i * 100 ));
+            },0 + ( i * 100 ));
         });
     });
 
@@ -20,8 +20,8 @@ $(document).ready(function() {
 
         $.each($("div#menu a"), function(i, el){
             setTimeout(function(){
-                $(el).animate({marginLeft: '-500px'});
-            },200 + ( i * 100 ));
+                $(el).animate({marginLeft: '769px'});
+            },0 + ( i * 100 ));
         });
     });
 

@@ -11,6 +11,7 @@ body {
     font-family: 'Staatliches', cursive;
     background-color: azure;
     color: #ffffff;
+    overflow: hidden;
 }
 header {
     background-color: rgba(144, 17, 60, 1);
@@ -30,16 +31,15 @@ header img {
 }
 #menu {
     width: 100%;
-    max-width: 500px;
 }
 #menu a {
     background-color: rgba(144,17,60,.9);
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
-    padding: 10px 20px;
+    padding: 10px 0 10px 20px;
     display: block;
     border-bottom: 1px solid azure;
-    width: 400px;
-    margin-left: -500px;
+    width: 100%;
+    margin-left: -789px;
 }
