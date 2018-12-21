@@ -1,30 +1,28 @@
 $(document).ready(function() {
 
+            $("header img.open").on("click", function () {
 
-    $("header img.open").on("click", function() {
-        $('#menu a').css('margin-left', '-789px');
-        $(this).removeClass('active');
-        $("header img").nextAll().addClass('active');
+                $('div#menu a').css('margin-left', '-789px');
 
-        $.each($("div#menu a"), function(i, el){
-            setTimeout(function(){
-                $(el).animate({marginLeft: '0'});
-            },0 + ( i * 100 ));
-        });
-    });
+                $(this).removeClass('active');
+                $("header img").nextAll().addClass('active');
 
-    $("header img.close, #menu a").on("click" || window.isReload, function() {
+                $.each($("div#menu a"), function (i, el) {
+                    setTimeout(function () {
+                        $(el).animate({marginLeft: '0'});
+                    }, 1 + (i * 100));
+                });
+            });
 
-        $('header img.active').removeClass('active');
-        $("header img").prevAll().addClass('active');
+            $("header img.close, #menu a").on("click", function () {
 
-        $.each($("div#menu a"), function(i, el){
-            setTimeout(function(){
-                $(el).animate({marginLeft: '769px'});
-            },0 + ( i * 100 ));
-        });
-    });
+                $('header img.active').removeClass('active');
+                $("header img").prevAll().addClass('active');
 
-
-
+                $.each($("div#menu a"), function (i, el) {
+                    setTimeout(function () {
+                        $(el).animate({marginLeft: '769px'});
+                    }, 1 + (i * 100));
+                });
+            });
 });
